@@ -1,7 +1,8 @@
 /* Fonts */
 /* Baselines */
 /* Animations & Transitions */
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   padding-top: 28px;
@@ -25,25 +26,25 @@ a {
   transition: all 0.2s ease-out;
   color: #f0f0f0;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   outline: none;
   color: #53a2be;
 }
-
-h1, .h1 {
+h1,
+.h1 {
   color: #f0f0f0;
   font-size: 24px;
 }
-
 .section {
   display: block;
   position: relative;
   width: 100%;
   height: auto;
 }
-
-hr, .hr {
+hr,
+.hr {
   display: block;
   width: 100%;
   height: 1px;
@@ -52,11 +53,9 @@ hr, .hr {
   background-color: #ccc;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
 }
-
 #hello {
   overflow: hidden;
 }
-
 .hello {
   display: block;
   position: relative;
@@ -151,7 +150,8 @@ hr, .hr {
   line-height: 52.5px;
   transition: all 0.8s ease-out 2.85s;
 }
-.text.above p, .text.above h1 {
+.text.above p,
+.text.above h1 {
   display: inline;
   vertical-align: bottom;
 }
@@ -245,10 +245,10 @@ hr, .hr {
   box-shadow: #00bfff 0 0 0 4px inset;
 }
 
-#hello >.hello > .under > .profile > a.button:hover{
+#hello > .hello > .under > .profile > a.button:hover {
   color: #fff;
   box-shadow: #00bfff 0 0 0 40px inset;
-   }
+}
 
 /* 480px Max Width Only */
 @media only screen and (max-width: 480px) {
@@ -295,4 +295,4 @@ hr, .hr {
     margin-left: -80px;
     font-size: 18px;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
