@@ -311,6 +311,25 @@ hr, .hr {
 	transform: translateY(0);
 }
 
+#hello >.hello > .under > .profile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 16px;
+}
+#hello >.hello > .under > .profile > a{
+display: block;
+max-width: 190px;
+text-decoration: none;
+border-radius: 4px;
+padding: 20px 30px;
+transition: 1s cubic-bezier(0.39, 0.5, 0.15, 1.36);
+}
+ #hello >.hello > .under > .profile > a.button{
+	color: #00bfff;
+box-shadow: #00bfff 0 0 0 4px inset;
+ }
+
 
 
 
@@ -324,6 +343,9 @@ hr, .hr {
 		font-size: 18px;
 		color: $text-light;
 	}
+	.hello.ready .hello-separator {
+        width: 50%;
+    }
 }
 
 /* 991px Max Width Only */
