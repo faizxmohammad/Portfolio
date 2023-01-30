@@ -1,0 +1,269 @@
+/* Fonts */
+/* Baselines */
+/* Animations & Transitions */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding-top: 28px;
+}
+
+body {
+  position: relative;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  background-color: #1a1a1a;
+  color: #ddd;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  color: #f0f0f0;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #53a2be;
+}
+
+h1, .h1 {
+  color: #f0f0f0;
+  font-size: 24px;
+}
+
+.section {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+hr, .hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  border: none;
+  background-color: #ccc;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+#hello {
+  overflow: hidden;
+}
+
+.hello {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  top: 13%;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 82px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  opacity: 0;
+  transition: all 0.75s ease-out;
+}
+
+.logo-b {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 180px;
+  height: 180px;
+  box-sizing: content-box;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 1.5s ease-out 0.75s;
+}
+.logo-b.blue {
+  border-left-color: #53a2be;
+}
+.logo-b.red {
+  border-left-color: #d9594c;
+}
+.logo-b.yellow {
+  border-left-color: #e0a458;
+}
+.logo-b.green {
+  border-left-color: #419d78;
+}
+.logo-b.shadow {
+  transform: rotate(0);
+  transition: all 0.3s ease-out 1.95s;
+}
+
+.logo > img {
+  display: block;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.6s ease-in-out 1.65s;
+}
+
+/* Texts */
+.text {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.text > span {
+  display: inline-block;
+  width: 100%;
+  color: #ccc;
+}
+
+.text.above {
+  width: 100%;
+  height: 85px;
+  padding-top: 28px;
+  font-family: "Quicksand", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #f0f0f0;
+  font-size: 14px;
+}
+.text.above > span {
+  margin-top: 85px;
+  line-height: 52.5px;
+  transition: all 0.8s ease-out 2.85s;
+}
+.text.above p, .text.above h1 {
+  display: inline;
+  vertical-align: bottom;
+}
+
+.hello-separator {
+  margin: 0 auto;
+  width: 0;
+  transition: all 0.6s ease-in-out 2.25s;
+}
+
+.text.under {
+  font-size: 13px;
+  color: #ccc;
+  font-style: italic;
+  padding-top: 21px;
+  line-height: 16px;
+}
+.text.under > span {
+  transform: translateY(-50px);
+  transition: all 0.4s ease-out 3.25s;
+}
+
+/* Logo */
+.hello.ready .logo {
+  width: 180px;
+  height: 180px;
+  margin-top: 0;
+  opacity: 1;
+}
+
+.hello.ready .logo-b {
+  opacity: 1;
+}
+
+.hello.ready .logo-b.blue {
+  transform: rotate(135deg);
+}
+
+.hello.ready .logo-b.red {
+  transform: rotate(225deg);
+}
+
+.hello.ready .logo-b.yellow {
+  transform: rotate(315deg);
+}
+
+.hello.ready .logo-b.green {
+  transform: rotate(405deg);
+}
+
+.hello.ready .logo-b.shadow {
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hello.ready .logo > img {
+  opacity: 1;
+}
+
+/* Texts */
+.hello.ready .hello-separator {
+  width: 100%;
+}
+
+.hello.ready .text.above > span {
+  margin-top: 0;
+  line-height: 32px;
+}
+
+.hello.ready .text.under > span {
+  transform: translateY(0);
+}
+
+/* 480px Max Width Only */
+@media only screen and (max-width: 480px) {
+  .text.above .changeable h1 {
+    font-size: 18px;
+    color: #f0f0f0;
+  }
+}
+/* 991px Max Width Only */
+@media only screen and (max-width: 991px) {
+  #hello {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    min-height: 100%;
+  }
+}
+/* 481px Min Width */
+@media (min-width: 481px) {
+  .hello {
+    width: 320px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logo {
+    margin-top: 112px;
+  }
+  .logo-b {
+    width: 240px;
+    height: 240px;
+  }
+  .logo > img {
+    width: 240px;
+    height: 240px;
+  }
+  .hello.ready .logo {
+    width: 240px;
+    height: 240px;
+  }
+  .text.above {
+    width: 480px;
+    margin-left: -80px;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=index.css.map */
